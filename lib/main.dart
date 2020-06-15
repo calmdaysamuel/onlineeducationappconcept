@@ -14,7 +14,7 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return CupertinoApp(
+    return MaterialApp(
       title: "Online Eduaction App Concept",
       home: ExploreScreen(),
       debugShowCheckedModeBanner: false,

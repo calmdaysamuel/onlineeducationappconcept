@@ -34,14 +34,15 @@ class _ExploreScreenState extends State<ExploreScreen> {
                 FeedSelector("Newest")
               ],
             ),
-            Container(
-              height:638,
-              child: ListView(
-                children: <Widget>[
-                  Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
-                  SizedBox(height: 15,),
-                  Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
-                ],
+            Expanded(
+              child: Container(
+                child: ListView(
+                  children: <Widget>[
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 15,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                  ],
+                ),
               ),
             ),
           ],

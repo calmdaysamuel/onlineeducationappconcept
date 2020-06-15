@@ -10,7 +10,6 @@ class FeedSelector extends StatelessWidget {
     return Column(
       children: <Widget>[
         Text(this.type),
-        Divider(thickness: 2, color: Colors.black,)
       ],
     );
   }
