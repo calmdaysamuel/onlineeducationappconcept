@@ -26,20 +26,36 @@ class _ExploreScreenState extends State<ExploreScreen> {
               ],
             ),
             SizedBox(height: 30,),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
-                FeedSelector("Popular"),
-                FeedSelector("Trending"),
-                FeedSelector("Newest")
-              ],
+            Padding(
+              padding: const EdgeInsets.fromLTRB(30.0,0,30.0,0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  FeedSelector("Popular", isSelected: true,),
+                  FeedSelector("Trending"),
+                  FeedSelector("Newest")
+                ],
+              ),
             ),
             Expanded(
               child: Container(
                 child: ListView(
                   children: <Widget>[
+                    SizedBox(height: 25,),
                     Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
-                    SizedBox(height: 15,),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
+                    Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
+                    SizedBox(height: 25,),
                     Course("assets/images/homeScreenImage.jpg","User Experience Design", "Adam Smith"),
                   ],
                 ),

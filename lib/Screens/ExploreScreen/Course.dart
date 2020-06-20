@@ -25,39 +25,16 @@ class Course extends StatelessWidget {
       this.backgroundColor = Colors.greenAccent});
   @override
   Widget build(BuildContext context) {
-    return Container(
-      //color: this.backgroundColor,
-      child: Column(
-        children: <Widget>[
-          Image.asset(imagePath),
-          Text(this.title, style: titleStyle,),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: <Widget>[
-              Text(this.author, style: authorStyle,),
-              IconButton(icon: (this.isSaved == true)? Icon(Icons.bookmark): Icon(Icons.bookmark_border),
-              onPressed: () =>{},)
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Rating(this.rating),
-              SizedBox(width: 10,),
-              Icon(Icons.live_tv),
-              SizedBox(width: 10,),
-              Text("${this.length} hours")
-            ],
-          ),
-          Row(
-            children: <Widget>[
-              Text("${this.enrolled}K Enrolled"),
-              SizedBox(width: 10,),
-              Icon(Icons.insert_drive_file),
-              SizedBox(width: 10,),
-              Text("${this.content} Docments")
-            ],
-          ),
-        ],
+    
+    return Padding(
+      padding: const EdgeInsets.fromLTRB(40, 0, 40, 0),
+      child: Container(
+
+        height: 350,
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(15),
+          color: this.backgroundColor
+        ),
       ),
     );
   }

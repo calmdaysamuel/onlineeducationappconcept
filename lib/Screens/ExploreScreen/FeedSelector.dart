@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:onlineeducationappconcept/Styles/TextStyles.dart';
 
 class FeedSelector extends StatelessWidget {
-  final type;
+  String type;
+  bool isSelected;
 
-  const FeedSelector(this.type);
+  FeedSelector(this.type, {this.isSelected = false});
 
   @override
   Widget build(BuildContext context) {
     return Column(
       children: <Widget>[
-        Text(this.type),
+        Text(this.type, style: feedSelectorStyle,),
+
       ],
     );
   }
